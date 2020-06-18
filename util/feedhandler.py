@@ -45,8 +45,6 @@ class FeedHandler(object):
         This should be called before parsing the url, to make sure it is parsable
         """
 
-        #string = string.lower()
-
         url_pattern = re.compile("((http(s?))):\/\/.*")
         if not url_pattern.match(string):
             string = "http://" + string
